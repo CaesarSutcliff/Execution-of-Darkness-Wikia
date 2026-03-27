@@ -1,8 +1,8 @@
 using System;
 
-namespace Execution_of_Darkness_Wikia
+namespace Execution_of_Darkness_Wikia.Pages.Factions
 {
-    public partial class SiteMaster : System.Web.UI.MasterPage
+    public partial class FactionList : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
