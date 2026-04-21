@@ -11,12 +11,8 @@ namespace Execution_of_Darkness_Wikia.Data
             if (_initialized)
                 return;
 
-            Database.SetInitializer(new WikiDbInitializer());
-
-            using (var context = new WikiDbContext())
-            {
-                context.Database.Initialize(false);
-            }
+            // Desabilitar inicialização automática - usar Schema Compare para updates manuais
+            Database.SetInitializer<WikiDbContext>(null);
 
             _initialized = true;
         }

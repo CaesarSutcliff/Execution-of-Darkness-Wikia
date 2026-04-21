@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Execution_of_Darkness_Wikia.Models
@@ -27,5 +28,8 @@ namespace Execution_of_Darkness_Wikia.Models
 
         [StringLength(300)]
         public string CoverImageUrl { get; set; }
+
+        public virtual ICollection<ArticleVersion> ArticleVersions { get; set; }
+        public virtual ICollection<Comment> Comments { get; set; }
     }
 }

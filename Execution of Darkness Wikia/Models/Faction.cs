@@ -23,6 +23,9 @@ namespace Execution_of_Darkness_Wikia.Models
 
         public string Description { get; set; }
 
+        [StringLength(80)]
+        public string FactionType { get; set; }
+
         [StringLength(150)]
         public string Motto { get; set; }
 
@@ -31,6 +34,9 @@ namespace Execution_of_Darkness_Wikia.Models
 
         [StringLength(300)]
         public string EmblemUrl { get; set; }
+
+        [StringLength(300)]
+        public string CrestUrl { get; set; }
 
         public virtual ICollection<CharacterProfile> Characters { get; set; }
     }

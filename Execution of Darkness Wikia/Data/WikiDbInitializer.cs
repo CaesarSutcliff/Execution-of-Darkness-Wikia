@@ -38,11 +38,13 @@ namespace Execution_of_Darkness_Wikia.Data
                     Alias = "Julian",
                     Summary = "Protagonista em conflito com seu próprio legado.",
                     Biography = "Entrada inicial para dar vida ao seed da wiki.",
-                    Rank = "Aprendiz",
-                    Status = "Vivo",
+                    RankTitle = "Aprendiz",
+                    StatusText = "Vivo",
                     FirstAppearance = "Volume 1",
                     Faction = executores,
-                    Location = mansao
+                    Location = mansao,
+                    IsFeaturedOnHome = true,
+                    FeaturedOrder = 1
                 };
 
                 var artigo = new WikiArticle
@@ -50,7 +52,7 @@ namespace Execution_of_Darkness_Wikia.Data
                     Title = "Execution of Darkness",
                     Slug = "execution-of-darkness",
                     Summary = "Artigo central da wiki com visão geral do universo.",
-                    Content = "Use este artigo como portal principal do universo da obra.",
+                    Content = "Use este artigo como portal principal do universo.",
                     Category = "Lore",
                     IsPublished = true,
                     PublishedAt = DateTime.UtcNow
@@ -62,7 +64,6 @@ namespace Execution_of_Darkness_Wikia.Data
                     Slug = "principio-de-tudo",
                     Summary = "Marco inicial para organizar a linha temporal.",
                     Description = "Evento seed para validar a estrutura da timeline.",
-                    EventDate = DateTime.UtcNow.Date,
                     Era = "Era Atual",
                     ImportanceLevel = "Alta"
                 };

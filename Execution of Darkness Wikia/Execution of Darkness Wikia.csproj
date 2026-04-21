@@ -5,7 +5,8 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion></ProductVersion>
+    <ProductVersion>
+    </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{EC7F71AB-2F8E-4876-97E2-66EB69D73A7C}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
@@ -21,7 +22,8 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
-    <NuGetPackageImportStamp></NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -124,9 +126,36 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Database\Scripts\20-character-module-upgrade.sql" />
+    <Content Include="Database\Scripts\21-character-module-seed.sql" />
+    <Content Include="Database\Tables\ArticleSection.sql" />
+    <Content Include="Database\Tables\ArticleTag.sql" />
+    <Content Include="Database\Tables\ArticleVersion.sql" />
+    <Content Include="Database\Tables\ArtifactEntry.sql" />
+    <Content Include="Database\Tables\ChapterEntry.sql" />
+    <Content Include="Database\Tables\CharacterArtifact.sql" />
+    <Content Include="Database\Tables\CharacterFactionHistory.sql" />
+    <Content Include="Database\Tables\CharacterPower.sql" />
+    <Content Include="Database\Tables\CharacterProfile.sql" />
+    <Content Include="Database\Tables\CharacterRelationship.sql" />
+    <Content Include="Database\Tables\Comment.sql" />
+    <Content Include="Database\Tables\EventCharacter.sql" />
+    <Content Include="Database\Tables\EventLocation.sql" />
+    <Content Include="Database\Tables\Faction.sql" />
+    <Content Include="Database\Tables\Location.sql" />
+    <Content Include="Database\Tables\PowerEntry.sql" />
+    <Content Include="Database\Tables\QuoteEntry.sql" />
+    <Content Include="Database\Tables\TagEntry.sql" />
+    <Content Include="Database\Tables\TimelineEvent.sql" />
+    <Content Include="Database\Tables\User.sql" />
+    <Content Include="Database\Tables\VolumeEntry.sql" />
+    <Content Include="Database\Tables\WikiArticle.sql" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Pages\Characters\CharacterDetails.aspx" />
+    <Content Include="Pages\Factions\FactionDetails.aspx" />
+    <Content Include="Pages\Locations\LocationDetails.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -193,6 +222,49 @@
     <Content Include="Pages\Locations\LocationList.aspx" />
     <Content Include="Pages\Timeline\TimelineList.aspx" />
     <Content Include="Pages\Admin\SchemaCompare.aspx" />
+    <Content Include="Pages\Articles\ArticleEdit.aspx" />
+    <Content Include="Pages\Articles\ArticleView.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Account\Manage.aspx" />
+    <Content Include="Help.aspx" />
+    <Content Include="Content\eod-wiki.css" />
+    <Content Include="Content\eod-characters.css" />
+    <Content Include="Scripts\eod-wiki-home.js" />
+    <Compile Include="Models\CharacterRelationship.cs" />
+    <Compile Include="Pages\Characters\CharacterDetails.aspx.cs">
+      <DependentUpon>CharacterDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Characters\CharacterDetails.aspx.designer.cs">
+      <DependentUpon>CharacterDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Factions\FactionDetails.aspx.cs">
+      <DependentUpon>FactionDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Factions\FactionDetails.aspx.designer.cs">
+      <DependentUpon>FactionDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Locations\LocationDetails.aspx.cs">
+      <DependentUpon>LocationDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Locations\LocationDetails.aspx.designer.cs">
+      <DependentUpon>LocationDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\CharacterService.cs" />
+    <Compile Include="Services\FactionService.cs" />
+    <Compile Include="Services\LocationService.cs" />
+    <Compile Include="Services\TimelineService.cs" />
+    <Compile Include="Services\HomePageService.cs" />
+    <Compile Include="ViewModels\CharacterViewModels.cs" />
+    <Compile Include="ViewModels\FactionViewModels.cs" />
+    <Compile Include="ViewModels\LocationViewModels.cs" />
+    <Compile Include="ViewModels\TimelineViewModels.cs" />
+    <Compile Include="ViewModels\HomePageViewModel.cs" />
+    <None Include="Database\Scripts\10-full-schema-fresh.sql" />
+    <None Include="Database\Scripts\11-upgrade-from-foundation.sql" />
     <None Include="Database\Scripts\00-baseline.sql" />
     <None Include="Database\Scripts\01-seed-minimo.sql" />
   </ItemGroup>
@@ -246,6 +318,20 @@
     <Compile Include="Pages\Articles\ArticleList.aspx.designer.cs">
       <DependentUpon>ArticleList.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Articles\ArticleEdit.aspx.cs">
+      <DependentUpon>ArticleEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Articles\ArticleEdit.aspx.designer.cs">
+      <DependentUpon>ArticleEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Articles\ArticleView.aspx.cs">
+      <DependentUpon>ArticleView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Articles\ArticleView.aspx.designer.cs">
+      <DependentUpon>ArticleView.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Characters\CharacterList.aspx.cs">
       <DependentUpon>CharacterList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -274,6 +360,40 @@
     <Compile Include="Pages\Timeline\TimelineList.aspx.designer.cs">
       <DependentUpon>TimelineList.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Help.aspx.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Help.aspx.designer.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ArticleVersion.cs" />
+    <Compile Include="Models\Comment.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Services\ArticleService.cs" />
+    <Compile Include="Services\CommentService.cs" />
+    <Compile Include="Services\UserService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\SchemaCompareService.cs" />
     <Compile Include="Site.Master.cs">
@@ -285,12 +405,14 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
@@ -328,7 +450,8 @@
           <IISUrl>https://localhost:44379/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl></CustomServerUrl>
+          <CustomServerUrl>
+          </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>

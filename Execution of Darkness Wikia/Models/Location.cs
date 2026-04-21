@@ -29,6 +29,9 @@ namespace Execution_of_Darkness_Wikia.Models
         [StringLength(100)]
         public string DangerLevel { get; set; }
 
+        [StringLength(80)]
+        public string LocationType { get; set; }
+
         [StringLength(300)]
         public string ImageUrl { get; set; }
 

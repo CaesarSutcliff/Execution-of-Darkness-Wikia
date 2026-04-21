@@ -1,0 +1,25 @@
+ADICIONE ESTES ITENS NO .CSPROJ
+
+<Content Include="Content\eod-characters.css" />
+<Content Include="Scripts\eod-characters.js" />
+<Compile Include="Models\CharacterRelationship.cs" />
+<Compile Include="Services\CharacterService.cs" />
+<Compile Include="ViewModels\CharacterViewModels.cs" />
+<Compile Include="Pages\Characters\CharacterDetails.aspx.cs">
+  <DependentUpon>CharacterDetails.aspx</DependentUpon>
+  <SubType>ASPXCodeBehind</SubType>
+</Compile>
+<Compile Include="Pages\Characters\CharacterDetails.aspx.designer.cs">
+  <DependentUpon>CharacterDetails.aspx</DependentUpon>
+</Compile>
+<Compile Include="Pages\Characters\CharacterList.aspx.cs">
+  <DependentUpon>CharacterList.aspx</DependentUpon>
+  <SubType>ASPXCodeBehind</SubType>
+</Compile>
+<Compile Include="Pages\Characters\CharacterList.aspx.designer.cs">
+  <DependentUpon>CharacterList.aspx</DependentUpon>
+</Compile>
+<Content Include="Pages\Characters\CharacterDetails.aspx" />
+<Content Include="Pages\Characters\CharacterList.aspx" />
+<None Include="Database\Scripts\20-character-module-upgrade.sql" />
+<None Include="Database\Scripts\21-character-module-seed.sql" />

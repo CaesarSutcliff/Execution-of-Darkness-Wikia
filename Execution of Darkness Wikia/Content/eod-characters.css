@@ -1,0 +1,716 @@
+.eod-page-hero {
+    border: 1px solid rgba(255,255,255,.06);
+    border-radius: 28px;
+    background: linear-gradient(140deg, rgba(15,15,22,.96), rgba(26,18,24,.88));
+    padding: 2rem;
+    box-shadow: 0 20px 50px rgba(0,0,0,.32);
+    margin-bottom: 1.5rem;
+}
+
+.eod-page-hero h1 {
+    margin: 0 0 .5rem 0;
+    font-size: clamp(2rem, 3vw, 3rem);
+    font-weight: 800;
+}
+
+.eod-page-hero p {
+    margin: 0;
+    color: #b7b0a9;
+    line-height: 1.8;
+}
+
+.eod-filter-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr auto auto;
+    gap: 1rem;
+    margin-top: 1.25rem;
+}
+
+.eod-input,
+.eod-select {
+    width: 100%;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,.08);
+    background: rgba(255,255,255,.05);
+    color: #fff;
+    padding: .9rem 1rem;
+}
+
+.eod-input::placeholder {
+    color: #9f9aa2;
+}
+
+.eod-btn-ghost {
+    border-radius: 14px;
+    padding: .9rem 1.2rem;
+    border: 1px solid rgba(255,255,255,.08);
+    background: rgba(255,255,255,.04);
+    color: #f1ece8;
+    font-weight: 700;
+}
+
+.eod-character-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.2rem;
+}
+
+.eod-character-card {
+    border-radius: 24px;
+    overflow: hidden;
+    background: rgba(18, 18, 28, 0.84);
+    border: 1px solid rgba(255,255,255,.06);
+    box-shadow: 0 20px 50px rgba(0,0,0,.32);
+    display: flex;
+    flex-direction: column;
+}
+
+.eod-character-banner {
+    min-height: 120px;
+    background:
+        radial-gradient(circle at 15% 30%, rgba(180,61,83,.38), transparent 25%),
+        radial-gradient(circle at 85% 20%, rgba(209,167,88,.18), transparent 18%),
+        linear-gradient(135deg, #171721, #251923);
+}
+
+.eod-character-body {
+    padding: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.eod-character-name {
+    font-size: 1.22rem;
+    font-weight: 800;
+    margin-bottom: .35rem;
+}
+
+.eod-character-alias {
+    color: #d7be8a;
+    font-size: .92rem;
+    margin-bottom: .8rem;
+}
+
+.eod-meta-list {
+    display: grid;
+    gap: .55rem;
+    margin: .9rem 0 1rem 0;
+}
+
+.eod-meta-item {
+    display: flex;
+    justify-content: space-between;
+    gap: .7rem;
+    padding-bottom: .45rem;
+    border-bottom: 1px solid rgba(255,255,255,.06);
+    font-size: .92rem;
+}
+
+.eod-meta-item span:first-child {
+    color: #b7b0a9;
+}
+
+.eod-character-summary {
+    color: #c7c0ba;
+    line-height: 1.75;
+    margin-bottom: 1rem;
+    flex: 1;
+}
+
+.eod-badge-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin-bottom: .9rem;
+}
+
+.eod-badge {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 999px;
+    padding: .28rem .7rem;
+    background: rgba(209,167,88,.1);
+    border: 1px solid rgba(209,167,88,.18);
+    color: #efd8a4;
+    font-size: .78rem;
+}
+
+.eod-details-layout {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 1.25rem;
+}
+
+.eod-details-card,
+.eod-details-section {
+    border-radius: 24px;
+    background: rgba(18,18,28,.84);
+    border: 1px solid rgba(255,255,255,.06);
+    box-shadow: 0 20px 50px rgba(0,0,0,.32);
+}
+
+.eod-details-card {
+    overflow: hidden;
+}
+
+.eod-details-banner {
+    min-height: 180px;
+    background:
+        radial-gradient(circle at 12% 28%, rgba(180,61,83,.44), transparent 24%),
+        radial-gradient(circle at 86% 18%, rgba(209,167,88,.22), transparent 16%),
+        linear-gradient(135deg, #14141d, #291722);
+}
+
+.eod-details-card-body {
+    padding: 1.4rem;
+}
+
+.eod-details-name {
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    font-weight: 900;
+    margin-bottom: .25rem;
+}
+
+.eod-details-sub {
+    color: #d7be8a;
+    font-size: 1rem;
+    margin-bottom: .9rem;
+}
+
+.eod-details-summary {
+    color: #c7c0ba;
+    line-height: 1.85;
+}
+
+.eod-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .85rem;
+    margin-top: 1.2rem;
+}
+
+.eod-detail-fact {
+    border-radius: 18px;
+    background: rgba(255,255,255,.03);
+    border: 1px solid rgba(255,255,255,.05);
+    padding: .9rem 1rem;
+}
+
+.eod-detail-fact strong {
+    display: block;
+    font-size: .85rem;
+    color: #b7b0a9;
+    margin-bottom: .2rem;
+}
+
+.eod-details-section {
+    padding: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.eod-details-section h3 {
+    font-size: 1.15rem;
+    font-weight: 800;
+    margin-bottom: .6rem;
+}
+
+.eod-details-section p {
+    color: #c7c0ba;
+    line-height: 1.85;
+    margin-bottom: 0;
+}
+
+.eod-rel-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.eod-rel-list li {
+    padding: .95rem 0;
+    border-bottom: 1px solid rgba(255,255,255,.06);
+}
+
+.eod-rel-list li:last-child {
+    border-bottom: 0;
+}
+
+.eod-rel-type {
+    display: inline-flex;
+    font-size: .76rem;
+    border-radius: 999px;
+    padding: .2rem .6rem;
+    background: rgba(180,61,83,.14);
+    border: 1px solid rgba(180,61,83,.18);
+    color: #f0b6c2;
+    margin-bottom: .35rem;
+}
+
+.eod-empty {
+    border-radius: 22px;
+    padding: 1.25rem;
+    background: rgba(255,255,255,.03);
+    border: 1px solid rgba(255,255,255,.06);
+    color: #c7c0ba;
+}
+
+@media (max-width: 1100px) {
+    .eod-character-grid,
+    .eod-details-layout {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .eod-filter-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+    .eod-character-grid,
+    .eod-details-layout,
+    .eod-detail-grid,
+    .eod-filter-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .eod-page-hero {
+        padding: 1.2rem;
+    }
+}
+
+/* Timeline Cards */
+.eod-timeline-container {
+    display: grid;
+    gap: 1rem;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.eod-timeline-container::before {
+    content: "";
+    position: absolute;
+    left: .6rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, rgba(180,61,83,.6), rgba(209,167,88,.3), rgba(180,61,83,.1));
+}
+
+.eod-timeline-card {
+    border-radius: 22px;
+    background: rgba(18, 18, 28, 0.84);
+    border: 1px solid rgba(255,255,255,.06);
+    box-shadow: 0 20px 50px rgba(0,0,0,.32);
+    padding: 1.3rem;
+    position: relative;
+}
+
+.eod-timeline-card-header {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    margin-bottom: .75rem;
+}
+
+.eod-timeline-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #b43353, #f0ca7d);
+    box-shadow: 0 0 0 4px rgba(180,61,83,.15);
+    flex-shrink: 0;
+    position: absolute;
+    left: -1.65rem;
+    top: 1.6rem;
+}
+
+.eod-timeline-era {
+    color: var(--eod-accent-2);
+    font-size: .85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+}
+
+.eod-timeline-card-title {
+    font-size: 1.15rem;
+    font-weight: 800;
+    margin: 0 0 .5rem 0;
+}
+
+.eod-timeline-card-summary {
+    color: var(--eod-muted);
+    line-height: 1.75;
+    margin: 0 0 .5rem 0;
+}
+
+.eod-timeline-card-desc {
+    color: #9f9aa2;
+    line-height: 1.65;
+    font-size: .92rem;
+    margin: 0;
+    padding-top: .5rem;
+    border-top: 1px solid rgba(255,255,255,.06);
+}
+
+/* Article cards dark theme */
+.eod-article-card {
+    border-radius: 22px;
+    background: rgba(18, 18, 28, 0.84);
+    border: 1px solid rgba(255,255,255,.06);
+    box-shadow: 0 20px 50px rgba(0,0,0,.32);
+    padding: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.eod-article-card h3 {
+    font-size: 1.15rem;
+    font-weight: 800;
+    margin: 0 0 .5rem 0;
+}
+
+.eod-article-card p {
+    color: var(--eod-muted);
+    line-height: 1.75;
+    flex: 1;
+}
+
+.eod-article-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: .75rem;
+    border-top: 1px solid rgba(255,255,255,.06);
+}
+
+.eod-article-card-footer small {
+    color: #9f9aa2;
+}
+
+/* Article view dark theme */
+.eod-article-view {
+    border-radius: 22px;
+    background: rgba(18, 18, 28, 0.84);
+    border: 1px solid rgba(255,255,255,.06);
+    box-shadow: 0 20px 50px rgba(0,0,0,.32);
+    padding: 1.5rem;
+}
+
+.eod-article-view h1 {
+    font-weight: 900;
+    margin-bottom: .5rem;
+}
+
+.eod-article-content {
+    color: var(--eod-muted);
+    line-height: 1.9;
+}
+
+/* Comment section dark theme */
+.eod-comment-section {
+    border-radius: 22px;
+    background: rgba(18, 18, 28, 0.84);
+    border: 1px solid rgba(255,255,255,.06);
+    box-shadow: 0 20px 50px rgba(0,0,0,.32);
+    padding: 1.3rem;
+    margin-top: 1.5rem;
+}
+
+.eod-comment-item {
+    padding: 1rem;
+    border-radius: 16px;
+    background: rgba(255,255,255,.03);
+    border: 1px solid rgba(255,255,255,.05);
+    margin-bottom: .75rem;
+}
+
+.eod-comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.eod-comment-author {
+    font-weight: 700;
+}
+
+.eod-comment-date {
+    color: #9f9aa2;
+    font-size: .85rem;
+}
+
+.eod-comment-body {
+    color: var(--eod-muted);
+    line-height: 1.75;
+}
+
+/* Form elements dark theme */
+.eod-textarea {
+    width: 100%;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,.08);
+    background: rgba(255,255,255,.05);
+    color: #fff;
+    padding: .9rem 1rem;
+    resize: vertical;
+    min-height: 100px;
+}
+
+.eod-textarea::placeholder {
+    color: #9f9aa2;
+}
+
+@media (max-width: 767px) {
+    .eod-timeline-container {
+        padding-left: 1.5rem;
+    }
+}
+
+/* Schema Compare Grid */
+.eod-schema-grid {
+    width: 100%;
+    color: var(--eod-text);
+    border-collapse: collapse;
+}
+
+.eod-schema-grid th {
+    background: #1a1a2e !important;
+    color: #f0ca7d !important;
+    padding: .7rem .8rem;
+    font-size: .85rem;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.eod-schema-grid td {
+    padding: .6rem .8rem;
+    border-bottom: 1px solid rgba(255,255,255,.05);
+    font-size: .9rem;
+    color: var(--eod-muted);
+}
+
+.eod-schema-grid tr:nth-child(even) td {
+    background: rgba(255,255,255,.02);
+}
+
+.eod-schema-grid tr:hover td {
+    background: rgba(209,167,88,.05);
+}
+
+/* ============================================================
+   Wiki-style Article Layout (inspirado em Fandom/Wikipedia)
+   ============================================================ */
+
+.wiki-article-layout {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.wiki-article-title {
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    font-weight: 900;
+    margin: 0 0 1rem 0;
+    padding-bottom: .75rem;
+    border-bottom: 2px solid var(--eod-accent);
+}
+
+/* Citação */
+.wiki-quote {
+    border-left: 3px solid var(--eod-accent-2);
+    background: rgba(209,167,88,.05);
+    border-radius: 0 14px 14px 0;
+    padding: 1.2rem 1.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.wiki-quote-text {
+    font-style: italic;
+    color: var(--eod-text);
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.wiki-quote-author {
+    color: var(--eod-accent-2);
+    font-size: .88rem;
+    margin-top: .5rem;
+    font-weight: 700;
+}
+
+/* Lead paragraph */
+.wiki-lead {
+    color: var(--eod-muted);
+    font-size: 1.05rem;
+    line-height: 1.9;
+    margin-bottom: 1.5rem;
+}
+
+/* Seções de conteúdo */
+.wiki-section {
+    margin-bottom: 1.5rem;
+}
+
+.wiki-section-title {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin: 0 0 .6rem 0;
+    padding-bottom: .4rem;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    color: var(--eod-text);
+}
+
+.wiki-section-body {
+    color: var(--eod-muted);
+    line-height: 1.9;
+    font-size: .98rem;
+}
+
+/* Infobox lateral */
+.wiki-infobox {
+    border-radius: 18px;
+    overflow: hidden;
+    background: rgba(18, 18, 28, 0.9);
+    border: 1px solid rgba(209,167,88,.2);
+    box-shadow: 0 12px 40px rgba(0,0,0,.3);
+    position: sticky;
+    top: 5rem;
+}
+
+.wiki-infobox-header {
+    background: linear-gradient(135deg, var(--eod-accent), #6b1528);
+    padding: 1rem 1.2rem;
+    text-align: center;
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: .02em;
+}
+
+.wiki-infobox-image {
+    padding: .8rem;
+}
+
+.wiki-infobox-placeholder {
+    width: 100%;
+    aspect-ratio: 3/4;
+    border-radius: 12px;
+    background:
+        radial-gradient(circle at 30% 40%, rgba(180,61,83,.35), transparent 30%),
+        radial-gradient(circle at 70% 25%, rgba(209,167,88,.2), transparent 20%),
+        linear-gradient(160deg, #14141d, #201520);
+}
+
+.wiki-infobox-section-title {
+    background: rgba(209,167,88,.08);
+    border-top: 1px solid rgba(209,167,88,.15);
+    border-bottom: 1px solid rgba(209,167,88,.15);
+    padding: .55rem 1rem;
+    font-size: .78rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: var(--eod-accent-2);
+    text-align: center;
+}
+
+.wiki-infobox-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.wiki-infobox-table tr {
+    border-bottom: 1px solid rgba(255,255,255,.04);
+}
+
+.wiki-infobox-table tr:last-child {
+    border-bottom: none;
+}
+
+.wiki-ib-label {
+    padding: .5rem .8rem;
+    font-size: .82rem;
+    font-weight: 700;
+    color: var(--eod-muted);
+    width: 42%;
+    vertical-align: top;
+}
+
+.wiki-ib-value {
+    padding: .5rem .8rem;
+    font-size: .88rem;
+    color: var(--eod-text);
+    vertical-align: top;
+}
+
+/* Relacionamentos grid */
+.wiki-rel-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .8rem;
+}
+
+.wiki-rel-card {
+    border-radius: 14px;
+    background: rgba(255,255,255,.03);
+    border: 1px solid rgba(255,255,255,.06);
+    padding: .9rem 1rem;
+}
+
+.wiki-rel-type {
+    display: inline-flex;
+    font-size: .72rem;
+    border-radius: 999px;
+    padding: .18rem .55rem;
+    background: rgba(180,61,83,.14);
+    border: 1px solid rgba(180,61,83,.2);
+    color: #f0b6c2;
+    margin-bottom: .4rem;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    font-weight: 700;
+}
+
+.wiki-rel-name {
+    display: block;
+    font-weight: 800;
+    font-size: 1rem;
+    color: var(--eod-text);
+    text-decoration: none;
+    margin-bottom: .2rem;
+}
+
+.wiki-rel-name:hover {
+    color: var(--eod-accent-2);
+}
+
+.wiki-rel-summary {
+    color: var(--eod-muted);
+    font-size: .88rem;
+    line-height: 1.6;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+    .wiki-article-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .wiki-infobox {
+        position: static;
+        order: -1;
+        max-width: 340px;
+        margin: 0 auto 1.5rem auto;
+    }
+
+    .wiki-rel-grid {
+        grid-template-columns: 1fr;
+    }
+}
